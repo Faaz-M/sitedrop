@@ -1,0 +1,3273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>YOUR COMPANY – Tile adhesive & grout delivered in 60 minutes, Bengaluru</title>
+
+<meta name="description" content="Order tile adhesive, grout and construction chemicals online in Bengaluru. 60-minute delivery, pay on delivery, bulk prices, GST invoice.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800;900&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   DESIGN TOKENS
+========================================================= */
+
+:root {
+  --bg: #F4F7FA;
+  --card: #FFFFFF;
+
+  /* Main dark navy */
+  --ink: #102A43;
+
+  /* Hero/header background */
+  --hero: #102A43;
+
+  /* Hero text */
+  --hero-text: #FFFFFF;
+  --hero-muted: #C3D0DD;
+
+  /* Secondary text */
+  --mut: #5B6B7C;
+
+  /* Borders */
+  --line: #D5DAE0;
+
+  /* Brand yellow */
+  --acc: #FFC20E;
+  --accink: #102A43;
+
+  /* Status colors */
+  --ok: #1B7F4B;
+  --err: #B3261E;
+
+  box-sizing: border-box;
+
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+html {
+  scroll-padding-top: env(safe-area-inset-top, 0px);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 16px/1.55 "IBM Plex Sans", system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Archivo, "Arial Narrow", Arial, sans-serif;
+  line-height: 1.05;
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--acc);
+  outline-offset: 2px;
+}
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 20;
+
+  background: #102A43 !important;
+  color: #FFFFFF !important;
+}
+
+header .wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 58px;
+}
+
+
+/* Company logo */
+
+.logo {
+  font: 900 22px Archivo, sans-serif;
+  letter-spacing: -0.5px;
+
+  color: #FFFFFF !important;
+
+  text-decoration: none;
+}
+
+.logo b {
+  color: #FFC20E !important;
+}
+
+
+header nav {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+header nav a {
+  color: #FFFFFF !important;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.btn {
+  border: 0;
+  border-radius: 8px;
+
+  padding: 10px 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  background: #FFC20E;
+  color: #102A43;
+}
+
+.btn.ghost {
+  background: transparent;
+
+  border: 1.5px solid var(--line);
+
+  color: var(--ink);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#cartBtn {
+  position: relative;
+}
+
+#cartCount {
+  background: #102A43;
+  color: #FFFFFF;
+
+  border-radius: 99px;
+
+  padding: 0 7px;
+
+  margin-left: 6px;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+  background: #102A43 !important;
+
+  color: #FFFFFF !important;
+
+  padding: 44px 0 52px;
+
+  border-bottom: 8px solid #FFC20E;
+}
+
+.hero .wrap {
+  display: grid;
+
+  gap: 28px;
+
+  grid-template-columns: 1.25fr 1fr;
+
+  align-items: center;
+}
+
+
+/* Main heading */
+
+.hero h1 {
+  color: #FFFFFF !important;
+
+  font-size: clamp(34px, 6vw, 64px);
+
+  font-weight: 900;
+
+  letter-spacing: -1.5px;
+}
+
+
+/* Description */
+
+.hero p {
+  color: #C3D0DD !important;
+
+  max-width: 46ch;
+
+  margin: 16px 0 0;
+}
+
+
+/* =========================================================
+   BENEFITS / PERKS
+========================================================= */
+
+.perks {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px 20px;
+
+  margin-top: 22px;
+
+  color: #C3D0DD !important;
+
+  font-size: 14px;
+}
+
+.perks span::before {
+  content: "✔ ";
+
+  color: #FFC20E;
+}
+
+
+/* =========================================================
+   DELIVERY CHECK CARD
+========================================================= */
+
+.check {
+  background: #FFFFFF !important;
+
+  color: #102A43 !important;
+
+  border-radius: 14px;
+
+  padding: 20px;
+}
+
+.check h2 {
+  color: #102A43 !important;
+
+  font-size: 22px;
+
+  margin-bottom: 4px;
+}
+
+.check > div {
+  color: #5B6B7C !important;
+
+  font-size: 14px;
+}
+
+.check form {
+  display: flex;
+
+  gap: 8px;
+
+  margin-top: 12px;
+}
+
+.check input {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 11px 12px;
+
+  border: 1.5px solid #D5DAE0;
+
+  border-radius: 8px;
+
+  background: #F4F7FA;
+
+  color: #102A43;
+
+  font-size: 18px;
+
+  letter-spacing: 2px;
+}
+
+.check input::placeholder {
+  color: #718096;
+}
+
+#pinMsg {
+  margin: 10px 0 0;
+
+  min-height: 24px;
+
+  font-weight: 500;
+}
+
+.ok {
+  color: var(--ok);
+}
+
+.err {
+  color: var(--err);
+}
+
+
+/* =========================================================
+   SHOP TOOLS
+========================================================= */
+
+.tools {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin: 28px 0 16px;
+
+  align-items: center;
+}
+
+.tools input[type="search"],
+.tools select {
+  padding: 10px 12px;
+
+  border: 1.5px solid var(--line);
+
+  border-radius: 8px;
+
+  background: var(--card);
+
+  color: var(--ink);
+}
+
+.tools input[type="search"] {
+  flex: 1;
+
+  min-width: 200px;
+}
+
+
+/* =========================================================
+   CATEGORY CHIPS
+========================================================= */
+
+.chips {
+  display: flex;
+
+  gap: 8px;
+
+  flex-wrap: wrap;
+}
+
+.chip {
+  border: 1.5px solid var(--line);
+
+  background: var(--card);
+
+  color: var(--ink);
+
+  padding: 7px 14px;
+
+  border-radius: 99px;
+
+  cursor: pointer;
+}
+
+.chip[aria-pressed="true"] {
+  background: var(--ink);
+
+  color: #FFFFFF;
+
+  border-color: var(--ink);
+}
+
+
+/* =========================================================
+   PRODUCT GRID
+========================================================= */
+
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  );
+
+  gap: 16px;
+
+  padding-bottom: 40px;
+}
+
+.card {
+  background: var(--card);
+
+  border: 1px solid var(--line);
+
+  border-radius: 12px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
+.pic {
+  height: 120px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  padding: 12px;
+
+  color: #FFFFFF;
+
+  font: 800 28px Archivo, sans-serif;
+}
+
+.pic small {
+  font: 500 13px "IBM Plex Sans";
+
+  background: rgba(0, 0, 0, 0.35);
+
+  padding: 2px 8px;
+
+  border-radius: 99px;
+}
+
+.body {
+  padding: 14px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  flex: 1;
+}
+
+.brand {
+  color: var(--mut);
+
+  font-size: 13px;
+}
+
+.body h3 {
+  font-size: 18px;
+}
+
+.price {
+  font: 800 24px Archivo, sans-serif;
+}
+
+.price s {
+  font: 400 14px "IBM Plex Sans";
+
+  color: var(--mut);
+
+  margin-left: 6px;
+}
+
+.tiers {
+  font-size: 13px;
+
+  color: var(--mut);
+
+  margin: 0;
+
+  padding: 8px 10px;
+
+  border-radius: 8px;
+
+  background: var(--bg);
+}
+
+.tiers b {
+  color: var(--ink);
+}
+
+.card .btn {
+  margin-top: auto;
+}
+
+.empty {
+  grid-column: 1 / -1;
+
+  text-align: center;
+
+  padding: 40px;
+
+  color: var(--mut);
+}
+
+
+/* =========================================================
+   WHY US
+========================================================= */
+
+.why {
+  background: var(--card);
+
+  border-top: 1px solid var(--line);
+
+  padding: 40px 0;
+}
+
+.why .wrap {
+  display: grid;
+
+  gap: 22px;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.why h3 {
+  font-size: 19px;
+
+  margin-bottom: 6px;
+}
+
+.why p {
+  margin: 0;
+
+  color: var(--mut);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+  padding: 28px 0;
+
+  color: var(--mut);
+
+  font-size: 14px;
+}
+
+footer a {
+  color: var(--ink);
+}
+
+
+/* =========================================================
+   OVERLAYS / CART / CHECKOUT
+========================================================= */
+
+.ov {
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  z-index: 40;
+
+  display: none;
+}
+
+.ov.on {
+  display: block;
+}
+
+.panel {
+  position: absolute;
+
+  right: 0;
+
+  top: 0;
+
+  bottom: 0;
+
+  width: min(420px, 100%);
+
+  background: var(--card);
+
+  display: flex;
+
+  flex-direction: column;
+
+  padding-top: env(safe-area-inset-top, 0px);
+
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.panel > header {
+  position: static;
+
+  background: none !important;
+
+  color: inherit !important;
+
+  border-bottom: 1px solid var(--line);
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 14px 18px;
+}
+
+.panel h2 {
+  font-size: 22px;
+}
+
+.lines {
+  flex: 1;
+
+  overflow: auto;
+
+  padding: 6px 18px;
+}
+
+.line {
+  display: grid;
+
+  grid-template-columns: 1fr auto;
+
+  gap: 4px 10px;
+
+  padding: 12px 0;
+
+  border-bottom: 1px solid var(--line);
+}
+
+.qty {
+  display: inline-flex;
+
+  align-items: center;
+
+  border: 1.5px solid var(--line);
+
+  border-radius: 8px;
+}
+
+.qty button {
+  border: 0;
+
+  background: none;
+
+  width: 34px;
+
+  height: 34px;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+.qty span {
+  min-width: 28px;
+
+  text-align: center;
+}
+
+.sum {
+  padding: 14px 18px;
+
+  border-top: 1px solid var(--line);
+}
+
+.sum div {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin: 3px 0;
+}
+
+.sum .tot {
+  font: 800 22px Archivo, sans-serif;
+}
+
+.sum .btn {
+  width: 100%;
+
+  margin-top: 10px;
+}
+
+
+/* =========================================================
+   FORMS
+========================================================= */
+
+.form {
+  padding: 18px;
+
+  display: grid;
+
+  gap: 10px;
+
+  overflow: auto;
+}
+
+.form label {
+  display: grid;
+
+  gap: 4px;
+
+  font-weight: 500;
+
+  font-size: 14px;
+}
+
+.form input,
+.form select {
+  padding: 11px;
+
+  border: 1.5px solid var(--line);
+
+  border-radius: 8px;
+
+  background: var(--bg);
+
+  color: var(--ink);
+}
+
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+.toast {
+  position: fixed;
+
+  left: 50%;
+
+  bottom: calc(
+    20px + env(safe-area-inset-bottom, 0px)
+  );
+
+  transform: translateX(-50%);
+
+  background: var(--ink);
+
+  color: #FFFFFF;
+
+  padding: 10px 18px;
+
+  border-radius: 8px;
+
+  z-index: 60;
+
+  opacity: 0;
+
+  pointer-events: none;
+
+  transition: opacity 0.2s;
+}
+
+.toast.on {
+  opacity: 1;
+}
+
+
+/* =========================================================
+   ADMIN / EDITOR
+========================================================= */
+
+#adOv .panel {
+  width: min(640px, 100%);
+}
+
+.ed {
+  grid-column: 1 / -1;
+
+  display: flex;
+
+  gap: 6px;
+
+  flex-wrap: wrap;
+
+  align-items: end;
+}
+
+.ed label {
+  font-size: 12px;
+
+  color: var(--mut);
+}
+
+.ed input {
+  display: block;
+
+  width: 72px;
+
+  padding: 6px;
+
+  border: 1.5px solid var(--line);
+
+  border-radius: 6px;
+
+  background: var(--bg);
+}
+
+.line select {
+  padding: 6px;
+
+  border-radius: 6px;
+
+  border: 1.5px solid var(--line);
+
+  background: var(--bg);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .hero .wrap {
+    grid-template-columns: 1fr;
+  }
+
+  header .wrap {
+    height: auto;
+    min-height: 58px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  header nav {
+    gap: 6px;
+  }
+
+  header nav a {
+    display: none;
+  }
+
+  .hero {
+    padding: 36px 0 42px;
+  }
+
+  .hero h1 {
+    font-size: clamp(38px, 12vw, 56px);
+  }
+
+  .check form {
+    flex-direction: column;
+  }
+
+  .check .btn {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  * {
+    transition: none !important;
+
+    scroll-behavior: auto !important;
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =======================================================
+     HEADER
+======================================================= -->
+
+<header>
+  <div class="wrap">
+
+    <!-- CHANGE YOUR COMPANY NAME HERE -->
+    <a class="logo" href="#">
+      YOUR COMPANY
+    </a>
+
+    <nav>
+
+      <a
+        href="#shop"
+        style="color:#fff;text-decoration:none"
+      >
+        Shop
+      </a>
+
+      <a
+        href="#why"
+        style="color:#fff;text-decoration:none"
+      >
+        Why us
+      </a>
+
+      <button
+        class="btn ghost"
+        id="loginBtn"
+        style="color:#fff;border-color:#fff6"
+      >
+        Log in
+      </button>
+
+      <button
+        class="btn"
+        id="cartBtn"
+        aria-label="Open cart"
+      >
+        Cart
+        <span id="cartCount">0</span>
+      </button>
+
+    </nav>
+
+  </div>
+</header>
+
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
+<section class="hero">
+
+  <div class="wrap">
+
+    <div>
+
+      <h1>
+        Tile adhesive at your site in 60 minutes.
+      </h1>
+
+      <p>
+        Branded adhesives, grouts and construction chemicals
+        from authorised distributors across Bengaluru.
+        Pay on delivery, GST invoice with every order.
+      </p>
+
+      <div class="perks">
+
+        <span>
+          Free delivery above ₹500
+        </span>
+
+        <span>
+          Pay on delivery
+        </span>
+
+        <span>
+          Bulk prices from 15 bags
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <!-- DELIVERY CHECK -->
+
+    <div class="check">
+
+      <h2>
+        Do we deliver to you?
+      </h2>
+
+      <div>
+        Enter your Bengaluru pincode.
+      </div>
+
+      <form id="pinForm">
+
+        <input
+          id="pin"
+          inputmode="numeric"
+          maxlength="6"
+          placeholder="560001"
+          aria-label="Pincode"
+          autocomplete="postal-code"
+        >
+
+        <button class="btn">
+          Check
+        </button>
+
+      </form>
+
+      <p
+        id="pinMsg"
+        role="status"
+      ></p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =======================================================
+     SHOP
+======================================================= -->
+
+<main class="wrap" id="shop">
+
+  <div class="tools">
+
+    <input
+      type="search"
+      id="q"
+      placeholder="Search brand or product, e.g. Laticrete"
+      aria-label="Search products"
+    >
+
+    <select
+      id="sort"
+      aria-label="Sort"
+    >
+      <option value="">
+        Sort: Featured
+      </option>
+
+      <option value="lo">
+        Price: low to high
+      </option>
+
+      <option value="hi">
+        Price: high to low
+      </option>
+    </select>
+
+  </div>
+
+
+  <div
+    class="chips"
+    id="chips"
+  ></div>
+
+
+  <h2
+    style="font-size:26px;margin:22px 0 14px"
+    id="count"
+  ></h2>
+
+
+  <div
+    class="grid"
+    id="grid"
+  ></div>
+
+</main>
+
+
+<!-- =======================================================
+     WHY US
+======================================================= -->
+
+<section
+  class="why"
+  id="why"
+>
+
+  <div class="wrap">
+
+    <div>
+      <h3>
+        60-minute delivery
+      </h3>
+
+      <p>
+        Stock is held close to the site,
+        so small orders reach you the same hour.
+      </p>
+    </div>
+
+
+    <div>
+      <h3>
+        Bulk pricing built in
+      </h3>
+
+      <p>
+        Add 15 or more bags and the lower
+        price applies automatically in your cart.
+      </p>
+    </div>
+
+
+    <div>
+      <h3>
+        Verified supply
+      </h3>
+
+      <p>
+        Sourced from authorised distributors.
+        Check batch date and GST invoice on delivery.
+      </p>
+    </div>
+
+
+    <div>
+      <h3>
+        Pay on delivery
+      </h3>
+
+      <p>
+        Inspect the bags first,
+        then pay by cash or UPI.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<footer>
+
+  <div class="wrap">
+
+    <form
+      id="trk"
+      style="
+        display:flex;
+        gap:8px;
+        flex-wrap:wrap;
+        margin-bottom:14px
+      "
+    >
+
+      <b style="align-self:center">
+        Track your order
+      </b>
+
+      <input
+        id="tid"
+        placeholder="Order ID"
+        required
+        style="
+          padding:8px;
+          border:1.5px solid var(--line);
+          border-radius:8px;
+          background:var(--card)
+        "
+      >
+
+      <input
+        id="tph"
+        placeholder="Mobile number"
+        required
+        inputmode="tel"
+        style="
+          padding:8px;
+          border:1.5px solid var(--line);
+          border-radius:8px;
+          background:var(--card)
+        "
+      >
+
+      <button class="btn">
+        Track
+      </button>
+
+      <span
+        id="tmsg"
+        role="status"
+      ></span>
+
+    </form>
+
+
+    <div id="biz"></div>
+
+
+    <div style="margin-top:6px">
+
+      <a href="/p/terms">
+        Terms
+      </a>
+
+      ·
+
+      <a href="/p/privacy">
+        Privacy
+      </a>
+
+      ·
+
+      <a href="/p/refund">
+        Refunds and returns
+      </a>
+
+      ·
+
+      <a href="/p/shipping">
+        Shipping
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- =======================================================
+     CART
+======================================================= -->
+
+<div
+  class="ov"
+  id="cartOv"
+>
+
+  <aside
+    class="panel"
+    role="dialog"
+    aria-label="Cart"
+  >
+
+    <header>
+
+      <h2>
+        Your cart
+      </h2>
+
+      <button
+        class="btn ghost"
+        data-close
+      >
+        Close
+      </button>
+
+    </header>
+
+
+    <div
+      class="lines"
+      id="lines"
+    ></div>
+
+
+    <div
+      class="sum"
+      id="sum"
+    ></div>
+
+  </aside>
+
+</div>
+
+
+<!-- =======================================================
+     CHECKOUT
+======================================================= -->
+
+<div
+  class="ov"
+  id="coOv"
+>
+
+  <aside
+    class="panel"
+    role="dialog"
+    aria-label="Checkout"
+  >
+
+    <header>
+
+      <h2>
+        Delivery details
+      </h2>
+
+      <button
+        class="btn ghost"
+        data-close
+      >
+        Close
+      </button>
+
+    </header>
+
+
+    <form
+      class="form"
+      id="coForm"
+    >
+
+      <label>
+        Full name
+
+        <input
+          name="n"
+          required
+          autocomplete="name"
+        >
+
+      </label>
+
+
+      <label>
+        Mobile number
+
+        <input
+          name="p"
+          required
+          inputmode="tel"
+          pattern="[6-9][0-9]{9}"
+          title="10-digit Indian mobile number"
+          autocomplete="tel"
+          readonly
+        >
+
+        <span
+          id="verifiedMobile"
+          class="ok"
+          style="font-size:13px"
+        >
+          ✓ OTP verified mobile number
+        </span>
+
+      </label>
+
+
+      <label>
+        Site address
+
+        <input
+          name="a"
+          required
+          autocomplete="street-address"
+        >
+
+      </label>
+
+
+      <label>
+        Pincode
+
+        <input
+          name="z"
+          required
+          inputmode="numeric"
+          pattern="560[0-9]{3}"
+          title="Bengaluru pincode"
+          maxlength="6"
+        >
+
+      </label>
+
+
+      <label>
+        GSTIN (optional)
+
+        <input
+          name="g"
+          maxlength="15"
+          style="text-transform:uppercase"
+        >
+
+      </label>
+
+
+      <label>
+        Payment
+
+        <select name="m">
+
+          <option value="cod">
+            Pay on delivery (cash / UPI)
+          </option>
+
+          <option
+            value="online"
+            id="onl"
+          >
+            Pay online (UPI / card)
+          </option>
+
+        </select>
+
+      </label>
+
+
+      <p
+        id="coMsg"
+        class="err"
+        role="alert"
+      ></p>
+
+
+      <button
+        class="btn"
+        id="place"
+      >
+        Place order
+      </button>
+
+    </form>
+
+
+    <div
+      class="form"
+      id="done"
+      hidden
+    ></div>
+
+  </aside>
+
+</div>
+
+
+<!-- =======================================================
+     LOGIN
+======================================================= -->
+
+<div
+  class="ov"
+  id="loOv"
+>
+
+  <aside
+    class="panel"
+    role="dialog"
+    aria-label="Account"
+  >
+
+    <header>
+
+      <h2>
+        Your account
+      </h2>
+
+      <button
+        class="btn ghost"
+        data-close
+      >
+        Close
+      </button>
+
+    </header>
+
+
+    <div
+      class="form"
+      id="loBody"
+    ></div>
+
+  </aside>
+
+</div>
+
+
+<!-- TOAST -->
+
+<div
+  class="toast"
+  id="toast"
+  role="status"
+></div>
+
+
+<!-- =======================================================
+     JAVASCRIPT
+======================================================= -->
+
+<script>
+
+let P = [];
+
+const norm = x => x;
+
+let FREE = 500;
+
+let FEE = 49;
+
+let CFG = {
+  a: 560001,
+  b: 560105
+};
+
+const $ = s => document.querySelector(s);
+
+const inr = n =>
+  "₹" + n.toLocaleString("en-IN");
+
+
+/* =========================================================
+   CART
+========================================================= */
+
+let cat = "All";
+
+let cart = {};
+
+try {
+
+  cart = JSON.parse(
+    localStorage.getItem("sd_cart") || "{}"
+  );
+
+} catch (e) {}
+
+const save = () => {
+
+  try {
+
+    localStorage.setItem(
+      "sd_cart",
+      JSON.stringify(cart)
+    );
+
+  } catch (e) {}
+
+};
+
+
+/* =========================================================
+   PRODUCT HELPERS
+========================================================= */
+
+const unit = (x, q) =>
+  q >= 45
+    ? x.t[1]
+    : q >= 15
+      ? x.t[0]
+      : x.p;
+
+const wt = x =>
+  x.w ? x.w + " kg" : "Kit";
+
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+function toast(m) {
+
+  const t = $("#toast");
+
+  t.textContent = m;
+
+  t.classList.add("on");
+
+  clearTimeout(toast.h);
+
+  toast.h = setTimeout(
+    () => t.classList.remove("on"),
+    1800
+  );
+}
+
+
+/* =========================================================
+   CATEGORY CHIPS
+========================================================= */
+
+function chips() {
+
+  $("#chips").innerHTML = [
+    "All",
+    "Adhesive",
+    "Grout"
+  ]
+
+    .map(c => `
+
+      <button
+        class="chip"
+        aria-pressed="${c === cat}"
+        data-c="${c}"
+      >
+        ${c === "All" ? "All products" : c}
+      </button>
+
+    `)
+
+    .join("");
+
+}
+
+
+/* =========================================================
+   RENDER PRODUCTS
+========================================================= */
+
+function render() {
+
+  const q =
+    $("#q").value
+      .trim()
+      .toLowerCase();
+
+  const s = $("#sort").value;
+
+  let l = P.filter(
+    x =>
+      (cat === "All" || x.c === cat) &&
+      (x.b + " " + x.n)
+        .toLowerCase()
+        .includes(q)
+  );
+
+  if (s) {
+
+    l.sort(
+      (a, b) =>
+        s === "lo"
+          ? a.p - b.p
+          : b.p - a.p
+    );
+
+  }
+
+  $("#count").textContent =
+    l.length +
+    (l.length === 1
+      ? " product"
+      : " products");
+
+
+  $("#grid").innerHTML = l.length
+
+    ? l
+        .map(
+          x => `
+
+          <article class="card">
+
+            <div
+              class="pic"
+              style="
+                background:${
+                  x.i
+                    ? `url(${x.i}) center/cover`
+                    : x.k
+                }
+              "
+            >
+
+              ${x.b.split(" ").pop()}
+
+              <small>
+                ${wt(x)}
+              </small>
+
+            </div>
+
+
+            <div class="body">
+
+              <span class="brand">
+                ${x.b}
+              </span>
+
+              <h3>
+                ${x.n}
+              </h3>
+
+              <div class="price">
+
+                ${inr(x.p)}
+
+                <s>
+                  per ${x.w ? "bag" : "unit"}
+                </s>
+
+              </div>
+
+
+              <p class="tiers">
+
+                Bulk:
+
+                <b>
+                  ${inr(x.t[0])}
+                </b>
+
+                at 15+
+
+                ·
+
+                <b>
+                  ${inr(x.t[1])}
+                </b>
+
+                at 45+
+
+              </p>
+
+
+              ${
+                x.s === 0
+
+                  ? `
+                    <button
+                      class="btn"
+                      disabled
+                    >
+                      Out of stock
+                    </button>
+                  `
+
+                  : `
+                    <button
+                      class="btn"
+                      data-add="${x.id}"
+                    >
+                      Add to cart
+                    </button>
+                  `
+              }
+
+            </div>
+
+          </article>
+
+        `
+        )
+
+        .join("")
+
+
+    : `
+
+      <div class="empty">
+
+        No products match "${q}".
+
+        Try a brand name like
+        Roff or Laticrete.
+
+      </div>
+
+    `;
+
+}
+
+
+/* =========================================================
+   TOTALS
+========================================================= */
+
+function totals() {
+
+  let sub = 0;
+
+  let n = 0;
+
+
+  for (const id in cart) {
+
+    const x = P.find(
+      p => p.id == id
+    );
+
+    if (!x) continue;
+
+    sub +=
+      unit(x, cart[id]) *
+      cart[id];
+
+    n += cart[id];
+
+  }
+
+
+  const fee =
+    sub && sub < FREE
+      ? FEE
+      : 0;
+
+
+  return {
+    sub,
+    n,
+    fee,
+    tot: sub + fee
+  };
+
+}
+
+
+/* =========================================================
+   CART UI
+========================================================= */
+
+function cartUI() {
+
+  const T = totals();
+
+  $("#cartCount").textContent =
+    T.n;
+
+
+  const ids =
+    Object.keys(cart)
+      .filter(
+        id =>
+          P.find(
+            p => p.id == id
+          )
+      );
+
+
+  $("#lines").innerHTML =
+    ids.length
+
+      ? ids
+          .map(id => {
+
+            const x =
+              P.find(
+                p => p.id == id
+              );
+
+            const q =
+              cart[id];
+
+            const u =
+              unit(x, q);
+
+
+            return `
+
+              <div class="line">
+
+                <div>
+
+                  <b>
+                    ${x.n}
+                  </b>
+
+                  <br>
+
+                  <span class="brand">
+
+                    ${x.b}
+                    ·
+                    ${wt(x)}
+                    ·
+                    ${inr(u)}
+
+                    ${u < x.p
+                      ? " (bulk)"
+                      : ""}
+
+                  </span>
+
+                </div>
+
+
+                <b>
+                  ${inr(u * q)}
+                </b>
+
+
+                <div class="qty">
+
+                  <button
+                    data-dec="${id}"
+                    aria-label="Decrease"
+                  >
+                    −
+                  </button>
+
+                  <span>
+                    ${q}
+                  </span>
+
+                  <button
+                    data-inc="${id}"
+                    aria-label="Increase"
+                  >
+                    +
+                  </button>
+
+                </div>
+
+
+                <button
+                  class="btn ghost"
+                  data-rm="${id}"
+                  style="
+                    padding:4px 10px;
+                    justify-self:end
+                  "
+                >
+                  Remove
+                </button>
+
+              </div>
+
+            `;
+
+          })
+
+          .join("")
+
+
+      : `
+
+        <p class="empty">
+
+          Your cart is empty.
+
+          Add a product to get started.
+
+        </p>
+
+      `;
+
+
+  $("#sum").innerHTML = ids.length
+
+    ? `
+
+      <div>
+        <span>Subtotal</span>
+        <span>${inr(T.sub)}</span>
+      </div>
+
+
+      <div>
+        <span>Delivery</span>
+        <span>
+          ${T.fee ? inr(T.fee) : "Free"}
+        </span>
+      </div>
+
+
+      ${
+        T.fee
+
+          ? `
+
+            <div
+              style="
+                color:var(--mut);
+                font-size:13px
+              "
+            >
+
+              <span>
+                Add
+                ${inr(FREE - T.sub)}
+                more for free delivery
+              </span>
+
+            </div>
+
+          `
+
+          : ""
+      }
+
+
+      <div class="tot">
+
+        <span>
+          Total
+        </span>
+
+        <span>
+          ${inr(T.tot)}
+        </span>
+
+      </div>
+
+
+      <button
+        class="btn"
+        data-co
+      >
+        Checkout
+      </button>
+
+    `
+
+    : "";
+
+  save();
+
+}
+
+
+/* =========================================================
+   OVERLAYS
+========================================================= */
+
+const open = id =>
+  $(id).classList.add("on");
+
+const closeAll = () =>
+  document
+    .querySelectorAll(".ov")
+    .forEach(
+      o =>
+        o.classList.remove("on")
+    );
+
+
+/* =========================================================
+   CLICK HANDLERS
+========================================================= */
+
+document.addEventListener(
+  "click",
+  e => {
+
+    const t = e.target;
+
+    const d = t.dataset;
+
+
+    if (d.c) {
+
+      cat = d.c;
+
+      chips();
+
+      render();
+
+    }
+
+
+    else if (d.add) {
+
+      cart[d.add] =
+        (cart[d.add] || 0) + 1;
+
+      cartUI();
+
+      toast("Added to cart");
+
+    }
+
+
+    else if (d.inc) {
+
+      cart[d.inc]++;
+
+      cartUI();
+
+    }
+
+
+    else if (d.dec) {
+
+      if (--cart[d.dec] <= 0) {
+
+        delete cart[d.dec];
+
+      }
+
+      cartUI();
+
+    }
+
+
+    else if (d.rm) {
+
+      delete cart[d.rm];
+
+      cartUI();
+
+    }
+
+
+    else if (
+      t.id === "cartBtn"
+    ) {
+
+      open("#cartOv");
+
+    }
+
+
+    else if (
+      d.co === ""
+    ) {
+
+      closeAll();
+
+
+      if (ME.phone) {
+
+        $("#coForm").hidden = false;
+
+        $("#done").hidden = true;
+
+        open("#coOv");
+
+      }
+
+      else {
+
+        checkoutAfterLogin = true;
+
+        loView(1);
+
+        open("#loOv");
+
+      }
+
+    }
+
+
+    else if (
+      d.close === "" ||
+      t.classList.contains("ov")
+    ) {
+
+      closeAll();
+
+    }
+
+  }
+);
+
+
+/* =========================================================
+   ESCAPE KEY
+========================================================= */
+
+document.addEventListener(
+  "keydown",
+  e => {
+
+    if (e.key === "Escape") {
+
+      closeAll();
+
+    }
+
+  }
+);
+
+
+/* =========================================================
+   SEARCH / SORT
+========================================================= */
+
+$("#q").addEventListener(
+  "input",
+  render
+);
+
+$("#sort").addEventListener(
+  "change",
+  render
+);
+
+
+/* =========================================================
+   PINCODE
+========================================================= */
+
+$("#pin").addEventListener(
+  "input",
+  e => {
+
+    e.target.value =
+      e.target.value.replace(
+        /\D/g,
+        ""
+      );
+
+  }
+);
+
+
+$("#pinForm").addEventListener(
+  "submit",
+  e => {
+
+    e.preventDefault();
+
+
+    const v =
+      $("#pin").value;
+
+    const m =
+      $("#pinMsg");
+
+
+    if (!/^\d{6}$/.test(v)) {
+
+      m.className = "err";
+
+      m.textContent =
+        "Enter a 6-digit pincode.";
+
+      return;
+
+    }
+
+
+    const n = +v;
+
+    const ok =
+      n >= CFG.a &&
+      n <= CFG.b;
+
+
+    m.className =
+      ok
+        ? "ok"
+        : "err";
+
+
+    m.textContent = ok
+
+      ? "Yes, we deliver to " +
+        v +
+        ". Estimated time: 60 minutes."
+
+      : "We don't deliver to " +
+        v +
+        " yet. We cover Bengaluru pincodes " +
+        CFG.a +
+        " to " +
+        CFG.b +
+        ".";
+
+  }
+);
+
+
+/* =========================================================
+   API
+========================================================= */
+
+const J = {
+  "Content-Type":
+    "application/json"
+};
+
+
+/* =========================================================
+   PAYMENT
+========================================================= */
+
+function pay(d) {
+
+  return new Promise(
+    (res, rej) => {
+
+      const sc =
+        document.createElement(
+          "script"
+        );
+
+
+      sc.src =
+        "https://checkout.razorpay.com/v1/checkout.js";
+
+
+      sc.onerror = () =>
+        rej(
+          new Error(
+            "Could not load the payment window. Your order is saved; we will call you."
+          )
+        );
+
+
+      sc.onload = () => {
+
+        new Razorpay({
+
+          key: d.rz.key,
+
+          amount:
+            d.rz.amount,
+
+          currency: "INR",
+
+          order_id:
+            d.rz.orderId,
+
+          /* COMPANY NAME */
+          name:
+            CFG.name ||
+            "YOUR COMPANY",
+
+
+          handler:
+            async x => {
+
+              const v =
+                await fetch(
+                  "/api/pay/verify",
+                  {
+                    method: "POST",
+
+                    headers: J,
+
+                    body:
+                      JSON.stringify({
+                        id: d.id,
+                        ...x
+                      })
+                  }
+                );
+
+
+              v.ok
+                ? res()
+                : rej(
+                    new Error(
+                      "We could not verify the payment. Contact us with order " +
+                      d.id +
+                      "."
+                    )
+                  );
+
+            },
+
+
+          modal: {
+
+            ondismiss: () =>
+              rej(
+                new Error(
+                  "Payment not completed. The order is held for 30 minutes; you can try again."
+                )
+              )
+
+          }
+
+        }).open();
+
+      };
+
+
+      document.head.appendChild(sc);
+
+    }
+  );
+
+}
+
+
+/* =========================================================
+   CHECKOUT
+========================================================= */
+
+$("#coForm").addEventListener(
+  "submit",
+  async e => {
+
+    e.preventDefault();
+
+
+    const f =
+      new FormData(e.target);
+
+    const m =
+      $("#coMsg");
+
+    const btn =
+      $("#place");
+
+
+    m.textContent = "";
+
+    btn.disabled = true;
+
+
+    const body = {
+
+      name:
+        f.get("n"),
+
+      phone:
+        f.get("p"),
+
+      addr:
+        f.get("a"),
+
+      pin:
+        f.get("z"),
+
+      gstin:
+        f.get("g"),
+
+      pay:
+        f.get("m"),
+
+      items:
+        Object.keys(cart)
+          .map(
+            id => ({
+              id: +id,
+              q: cart[id]
+            })
+          )
+
+    };
+
+
+    try {
+
+      const r =
+        await fetch(
+          "/api/order",
+          {
+            method: "POST",
+
+            headers: J,
+
+            body:
+              JSON.stringify(body)
+          }
+        );
+
+
+      const d =
+        await r.json();
+
+
+      if (r.status === 401) {
+
+        closeAll();
+
+        loView(1);
+
+        open("#loOv");
+
+      }
+
+
+      if (!r.ok) {
+
+        throw new Error(
+          d.error ||
+          "Order failed"
+        );
+
+      }
+
+
+      if (d.rz) {
+
+        await pay(d);
+
+      }
+
+
+      $("#coForm").hidden =
+        true;
+
+
+      const dn =
+        $("#done");
+
+
+      dn.hidden = false;
+
+
+      dn.innerHTML = `
+
+        <h2>
+          Order placed
+        </h2>
+
+
+        <p>
+
+          Thank you.
+
+          Your order number is
+
+          <b>
+            ${d.id}
+          </b>.
+
+          We will deliver within
+          about 60 minutes.
+
+        </p>
+
+
+        <p>
+
+          ${
+            body.pay === "online"
+
+              ? "Payment received."
+
+              : "Pay <b>" +
+                inr(d.tot) +
+                "</b> on delivery."
+          }
+
+          Check the batch date
+          on the bags.
+
+        </p>
+
+
+        <p>
+
+          <a
+            href="/invoice/${d.id}?phone=${body.phone}"
+            target="_blank"
+            rel="noopener"
+          >
+            View GST invoice
+          </a>
+
+        </p>
+
+
+        <button
+          class="btn"
+          data-close
+        >
+          Continue shopping
+        </button>
+
+      `;
+
+
+      cart = {};
+
+      cartUI();
+
+      await load();
+
+
+    }
+
+    catch (err) {
+
+      m.textContent =
+        err.message;
+
+    }
+
+
+    btn.disabled = false;
+
+  }
+);
+
+
+/* =========================================================
+   ORDER TRACKING
+========================================================= */
+
+$("#trk").addEventListener(
+  "submit",
+  async e => {
+
+    e.preventDefault();
+
+
+    const m =
+      $("#tmsg");
+
+
+    const r =
+      await fetch(
+        "/api/track?id=" +
+        encodeURIComponent(
+          $("#tid").value.trim()
+        ) +
+        "&phone=" +
+        encodeURIComponent(
+          $("#tph").value.trim()
+        )
+      );
+
+
+    const d =
+      await r.json();
+
+
+    m.textContent = r.ok
+
+      ? "Status: " +
+        d.status +
+        (
+          d.pay === "online"
+
+            ? (
+                d.paid
+                  ? " (paid online)"
+                  : " (payment pending)"
+              )
+
+            : ""
+        )
+
+      : d.error;
+
+  }
+);
+
+
+/* =========================================================
+   LOAD PRODUCTS
+========================================================= */
+
+async function load() {
+
+  try {
+
+    const r =
+      await fetch(
+        "/api/products"
+      );
+
+
+    P =
+      await r.json();
+
+
+    render();
+
+    cartUI();
+
+  }
+
+  catch (e) {
+
+    $("#grid").innerHTML = `
+
+      <div class="empty">
+
+        Could not load products.
+
+        Please refresh.
+
+      </div>
+
+    `;
+
+  }
+
+}
+
+
+/* =========================================================
+   LOAD CONFIG
+========================================================= */
+
+(async () => {
+
+  try {
+
+    const c =
+      await (
+        await fetch(
+          "/api/config"
+        )
+      ).json();
+
+
+    CFG = {
+      ...c
+    };
+
+
+    FREE = c.free;
+
+    FEE = c.fee;
+
+
+    if (!c.online) {
+
+      $("#onl").remove();
+
+    }
+
+
+    $("#biz").textContent = [
+
+      c.legal,
+
+      c.addr,
+
+      c.gstin &&
+        "GSTIN " +
+        c.gstin,
+
+      c.phone &&
+        "Phone " +
+        c.phone
+
+    ]
+
+      .filter(Boolean)
+
+      .join(" · ");
+
+
+    if (c.wa) {
+
+      const a =
+        document.createElement(
+          "a"
+        );
+
+
+      a.href =
+        "https://wa.me/" +
+        c.wa;
+
+
+      a.textContent =
+        "Chat on WhatsApp";
+
+
+      a.style.cssText = `
+
+        position:fixed;
+
+        right:16px;
+
+        bottom:
+          calc(
+            16px +
+            env(
+              safe-area-inset-bottom,
+              0px
+            )
+          );
+
+        background:#25D366;
+
+        color:#073;
+
+        padding:12px 16px;
+
+        border-radius:99px;
+
+        font-weight:600;
+
+        text-decoration:none;
+
+        z-index:15;
+
+      `;
+
+
+      document.body.appendChild(a);
+
+    }
+
+
+    cartUI();
+
+  }
+
+  catch (e) {}
+
+  await load();
+
+})();
+
+
+/* =========================================================
+   LOGIN
+========================================================= */
+
+let ME = {};
+
+let PH = "";
+
+let checkoutAfterLogin = false;
+
+
+async function me() {
+
+  try {
+
+    ME =
+      await (
+        await fetch(
+          "/api/me"
+        )
+      ).json();
+
+  }
+
+  catch (e) {
+
+    ME = {};
+
+  }
+
+
+  $("#loginBtn").textContent =
+    ME.phone
+      ? "My orders"
+      : "Log in";
+
+
+  const p =
+    document.querySelector(
+      "#coForm [name=p]"
+    );
+
+
+  p.readOnly =
+    !!ME.phone;
+
+
+  if (ME.phone) {
+
+    p.value =
+      ME.phone;
+
+  }
+
+}
+
+
+/* =========================================================
+   LOGIN VIEW
+========================================================= */
+
+function loView(step) {
+
+  const b =
+    $("#loBody");
+
+
+  if (ME.phone) {
+
+    b.innerHTML = `
+
+      <p>
+
+        Logged in as
+
+        <b>
+          ${ME.phone}
+        </b>
+
+      </p>
+
+
+      ${
+        ME.orders.length
+
+          ? ME.orders
+              .map(
+                o => `
+
+                  <div class="line">
+
+                    <div>
+
+                      <b>
+                        ${o.id}
+                      </b>
+
+                      <br>
+
+                      <span class="brand">
+
+                        ${o.items
+                          .map(
+                            i =>
+                              i.q +
+                              "× " +
+                              i.n
+                          )
+                          .join("; ")}
+
+                      </span>
+
+                    </div>
+
+
+                    <b>
+                      ${inr(o.tot)}
+                    </b>
+
+
+                    <span>
+                      ${o.status}
+                    </span>
+
+
+                    <a
+                      href="/invoice/${o.id}"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Invoice
+                    </a>
+
+                  </div>
+
+                `
+              )
+              .join("")
+
+          : "<p>No orders yet.</p>"
+      }
+
+
+      <button
+        class="btn ghost"
+        id="lout"
+      >
+        Log out
+      </button>
+
+    `;
+
+
+    return;
+
+  }
+
+
+  b.innerHTML = (
+
+    step === 2
+
+      ? `
+
+        <form id="f2">
+
+          <p>
+
+            Enter the 6-digit code
+            sent to
+            ${PH.replace(/\D/g, "")}.
+
+          </p>
+
+
+          <label>
+
+            Code
+
+            <input
+              id="lcd"
+              inputmode="numeric"
+              maxlength="6"
+              required
+              autocomplete="one-time-code"
+            >
+
+          </label>
+
+
+          <button class="btn">
+            Verify
+          </button>
+
+        </form>
+
+      `
+
+      : `
+
+        <form id="f1">
+
+          <p
+            style="
+              margin:0;
+              color:var(--mut)
+            "
+          >
+
+            Your mobile number must be
+            verified by OTP before an order
+            can be placed.
+
+          </p>
+
+
+          <label>
+
+            Mobile number
+
+            <input
+              id="lph"
+              inputmode="tel"
+              maxlength="10"
+              pattern="[6-9][0-9]{9}"
+              required
+              autocomplete="tel"
+            >
+
+          </label>
+
+
+          <button class="btn">
+            Send OTP
+          </button>
+
+        </form>
+
+      `
+
+  )
+
+  +
+
+  `
+
+    <p
+      class="err"
+      id="lm"
+      role="alert"
+    ></p>
+
+  `;
+
+}
+
+
+/* =========================================================
+   LOGIN SUBMISSION
+========================================================= */
+
+document.addEventListener(
+  "submit",
+  async e => {
+
+    const id =
+      e.target.id;
+
+
+    if (
+      id !== "f1" &&
+      id !== "f2"
+    ) {
+
+      return;
+
+    }
+
+
+    e.preventDefault();
+
+
+    const post =
+      async (u, b) => {
+
+        const r =
+          await fetch(
+            u,
+            {
+              method: "POST",
+
+              headers: J,
+
+              body:
+                JSON.stringify(b)
+            }
+          );
+
+
+        return {
+          ok: r.ok,
+          d: await r.json()
+        };
+
+      };
+
+
+    if (id === "f1") {
+
+      PH =
+        $("#lph").value;
+
+
+      const r =
+        await post(
+          "/api/otp/send",
+          {
+            phone: PH
+          }
+        );
+
+
+      r.ok
+        ? loView(2)
+        : (
+            $("#lm").textContent =
+              r.d.error
+          );
+
+    }
+
+
+    else {
+
+      const r =
+        await post(
+          "/api/otp/verify",
+          {
+            phone: PH,
+            code:
+              $("#lcd").value
+          }
+        );
+
+
+      if (r.ok) {
+
+        await me();
+
+        loView();
+
+
+        if (
+          checkoutAfterLogin
+        ) {
+
+          checkoutAfterLogin =
+            false;
+
+          closeAll();
+
+          $("#coForm").hidden =
+            false;
+
+          $("#done").hidden =
+            true;
+
+          open("#coOv");
+
+        }
+
+      }
+
+      else {
+
+        $("#lm").textContent =
+          r.d.error;
+
+      }
+
+    }
+
+  }
+);
+
+
+/* =========================================================
+   LOGIN BUTTON / LOGOUT
+========================================================= */
+
+document.addEventListener(
+  "click",
+  async e => {
+
+    if (
+      e.target.id ===
+      "loginBtn"
+    ) {
+
+      await me();
+
+      loView(1);
+
+      open("#loOv");
+
+    }
+
+
+    if (
+      e.target.id ===
+      "lout"
+    ) {
+
+      await fetch(
+        "/api/logout",
+        {
+          method: "POST"
+        }
+      );
+
+
+      await me();
+
+      loView(1);
+
+    }
+
+  }
+);
+
+
+/* =========================================================
+   INITIALIZE
+========================================================= */
+
+chips();
+
+cartUI();
+
+me();
+
+</script>
+
+</body>
+</html>
